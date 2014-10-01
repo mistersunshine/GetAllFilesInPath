@@ -23,7 +23,7 @@ function GetAllFilesInPath($requestedPath, $recursive = true)
 			{
 
 				// This entry is a folder, and we're recursive, so recurse
-				$subfolderResults = $this->GetAllFilesInPath($currentPath);
+				$subfolderResults = GetAllFilesInPath($currentPath);
 
 				// This adds sub arrays for sub folders
 				$files[$currentPath] = $subfolderResults;
